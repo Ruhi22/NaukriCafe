@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JobProfileActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_pictureTilte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp">
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="14dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/back_arrow"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:src="@drawable/tabler_icon_coin_rupee"
+            android:background="@drawable/rounded_corner"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fullstack Web Developer"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:paddingTop="16dp"
+            android:fontFamily="@font/roboto"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Axie.com"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:fontFamily="@font/roboto"/>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_locationSalary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@id/ll_pictureTilte">
+    <LinearLayout
+        android:id="@+id/ll_locationSalary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+        <LinearLayout
+            android:id="@+id/ll_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="0.3">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/tabler_icon_map_pin"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                android:textColor="@color/colorGray"
+                android:paddingTop="12dp"
+                android:fontFamily="@font/roboto"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mumbai"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingTop="8dp"
+                android:fontFamily="@font/roboto"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_jobType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="0.3">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/tabler_icon_clock"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job Type"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                android:textColor="@color/colorGray"
+                android:paddingTop="12dp"
+                android:fontFamily="@font/roboto"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Time"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingTop="8dp"
+                android:fontFamily="@font/roboto"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_salaries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="0.3">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/tabler_icon_coin_rupee"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salaries"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                android:textColor="@color/colorGray"
+                android:paddingTop="12dp"
+                android:fontFamily="@font/roboto"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20K - 30K"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingTop="8dp"
+                android:fontFamily="@font/roboto"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:id="@+id/ll_jobDescriptionSkills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_below="@id/cv_locationSalary">
+
+            <RelativeLayout
+                android:id="@+id/rl_descriptionSkillsButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_jobDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:text="Job Description"
+                    android:textAllCaps="false"
+                    android:textSize="14sp"
+                    android:layout_alignParentStart="true"
+                    android:theme="@style/ButtonStlye123"
+                    android:background="@drawable/rectangular_rounded_button"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_jobSkills"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Job Skills"
+                    android:gravity="center"
+                    android:textAllCaps="false"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorGrayLight"
+                    android:theme="@style/ButtonStlye123"
+                    android:background="@drawable/rectangular_rounded_button_disabled"/>
+                <LinearLayout
+                    android:id="@+id/ll_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_below="@id/btn_jobDescription"
+                    android:visibility="visible">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/dummyText_loremIpsum" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_skills"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_below="@id/btn_jobSkills"
+                    android:visibility="gone">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Kotlin Retrofit RoomDB Postman" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_applyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:baselineAligned="true"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="24dp"
+        android:paddingBottom="8dp">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_applyJob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apply Now"
+            android:backgroundTint="@color/colorPrimary"
+            android:textAllCaps="false"
+            android:background="@drawable/rounded_button"
+            android:elevation="4dp"
+            android:theme="@style/ButtonStlyeMain"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
